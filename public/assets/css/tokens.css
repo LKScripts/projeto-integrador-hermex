@@ -1,0 +1,49 @@
+/* ============================================================
+   hermeX — Design Tokens
+   Importar antes de qualquer outro CSS do projeto.
+   ============================================================ */
+
+:root {
+    /* Marca */
+    --hermex-brand:        #F4D35E;
+    --hermex-brand-soft:   #FCE99B;
+    --hermex-brand-dark:   #C9A227;
+
+    /* Primário (slate) */
+    --hermex-primary:       #1E293B;
+    --hermex-primary-hover: #0F172A;
+
+    /* Texto */
+    --hermex-text:          #0F172A;
+    --hermex-text-muted:    #64748B;
+    --hermex-text-inverse:  #F8FAFC;
+
+    /* Superfícies */
+    --hermex-bg:            #F8FAFC;
+    --hermex-surface:       #FFFFFF;
+    --hermex-surface-alt:   #F1F5F9;
+
+    /* Bordas */
+    --hermex-border:        #E2E8F0;
+    --hermex-border-strong: #CBD5E1;
+
+    /* Status — reservados para eventos da aplicação, nunca usar na identidade visual */
+    /* Bootstrap: --bs-success, --bs-warning, --bs-danger, --bs-info */
+
+    /* Sidebar */
+    --sidebar-width:        260px;
+    --sidebar-bg:           var(--hermex-primary);
+
+    /* Sombras */
+    --shadow-sm:   0 1px 3px rgba(0,0,0,.08);
+    --shadow-md:   0 4px 12px rgba(0,0,0,.10);
+    --shadow-lg:   0 8px 24px rgba(0,0,0,.12);
+
+    /* Raio */
+    --radius-sm:   6px;
+    --radius-md:   10px;
+    --radius-lg:   16px;
+
+    /* Transições */
+    --transition:  150ms ease;
+}
