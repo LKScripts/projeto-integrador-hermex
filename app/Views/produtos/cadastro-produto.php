@@ -282,7 +282,7 @@ ob_start();
 
             <div class="d-flex gap-2 flex-wrap">
 
-                <a href="/?action=produtos"
+                <a href="<?= BASE_URL ?>?action=produtos"
                    class="btn btn-outline-secondary">
                     Cancelar
                 </a>
