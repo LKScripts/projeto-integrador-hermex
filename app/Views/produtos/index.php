@@ -1,6 +1,6 @@
 <?php
 /**
- * hermeX - Gestão de Itens Custodiados
+ * hermeX - Gestão de Itens Custodiados.
  * View: app/Views/produtos/index.php
  */
 
