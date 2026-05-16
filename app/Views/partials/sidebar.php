@@ -6,7 +6,7 @@ $actionAtual    = $_GET['action'] ?? 'dashboard';
 <aside class="sidebar" id="sidebar" aria-label="Navegação principal">
 
     <!-- logo simplificada -->
-    <a href="/" class="sidebar-logo" aria-label="hermeX — ir para o dashboard">
+    <a href="<?= BASE_URL ?>" class="sidebar-logo" aria-label="hermeX — ir para o dashboard">
         <img src="<?= BASE_URL ?>assets/img/logo-hermex.svg"
              alt="Logo hermeX — ícone de caixa com escudo"
              width="40" height="40">
@@ -21,7 +21,7 @@ $actionAtual    = $_GET['action'] ?? 'dashboard';
         <!-- OPERAÇÃO -->
         <span class="sidebar-section" aria-hidden="true">Operação</span>
 
-        <a href="/?action=dashboard"
+        <a href="<?= BASE_URL ?>?action=dashboard"
            class="sidebar-link <?= $actionAtual === 'dashboard' ? 'ativo' : '' ?>"
            aria-current="<?= $actionAtual === 'dashboard' ? 'page' : 'false' ?>">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -33,7 +33,7 @@ $actionAtual    = $_GET['action'] ?? 'dashboard';
             Dashboard
         </a>
 
-        <a href="/?action=caixas"
+        <a href="<?= BASE_URL ?>?action=caixas"
            class="sidebar-link <?= $actionAtual === 'caixas' ? 'ativo' : '' ?>"
            aria-current="<?= $actionAtual === 'caixas' ? 'page' : 'false' ?>">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -45,7 +45,7 @@ $actionAtual    = $_GET['action'] ?? 'dashboard';
             Caixas
         </a>
 
-        <a href="/?action=alertas"
+        <a href="<?= BASE_URL ?>?action=alertas"
            class="sidebar-link <?= $actionAtual === 'alertas' ? 'ativo' : '' ?>"
            aria-current="<?= $actionAtual === 'alertas' ? 'page' : 'false' ?>">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -66,7 +66,7 @@ $actionAtual    = $_GET['action'] ?? 'dashboard';
         <!-- CADASTROS -->
         <span class="sidebar-section" aria-hidden="true">Cadastros</span>
 
-        <a href="/?action=filiais"
+        <a href="<?= BASE_URL ?>?action=filiais"
            class="sidebar-link <?= $actionAtual === 'filiais' ? 'ativo' : '' ?>">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                  stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -77,7 +77,7 @@ $actionAtual    = $_GET['action'] ?? 'dashboard';
             Filiais
         </a>
 
-        <a href="/?action=produtos"
+        <a href="<?= BASE_URL ?>?action=produtos"
            class="sidebar-link <?= $actionAtual === 'produtos' ? 'ativo' : '' ?>">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                  stroke="currentColor" stroke-width="2" stroke-linecap="round"
@@ -91,7 +91,7 @@ $actionAtual    = $_GET['action'] ?? 'dashboard';
         <!-- ANÁLISE -->
         <span class="sidebar-section" aria-hidden="true">Análise</span>
 
-        <a href="/?action=relatorios"
+        <a href="<?= BASE_URL ?>?action=relatorios"
            class="sidebar-link <?= $actionAtual === 'relatorios' ? 'ativo' : '' ?>">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
                  stroke="currentColor" stroke-width="2" stroke-linecap="round"
