@@ -7,8 +7,7 @@ $tituloPagina = 'Cadastro de Filial';
 $estilos = [
     '/assets/css/bootstrap.min.css',
     '/assets/css/hermex_pages.css',
-    '/assets/css/dashboard.css',
-    '/assets/css/filiais.css'
+    '/assets/css/dashboard.css'
 ];
 
 $scripts = [
@@ -39,9 +38,10 @@ ob_start();
     <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
 
         <!-- CARD HEADER -->
-        <div class="card-header bg-dark text-white py-3 px-4 border-0">
+        <div class="card-header text-white py-3 px-4 border-0"
+        style="background:#1e293b;">
 
-            <div class="d-flex align-items-center gap-2">
+            <div class="d-flex align-items-center gap-2" >
                 <span class="fs-4">🏢</span>
 
                 <div>
@@ -176,7 +176,7 @@ ob_start();
                     </a>
 
                     <button type="submit"
-                            class="btn btn-dark px-5 py-2 fw-semibold">
+                            class="btn-hermex-primary d-flex align-items-center gap-2 text-decoration-none">
                         Salvar Filial
                     </button>
 
