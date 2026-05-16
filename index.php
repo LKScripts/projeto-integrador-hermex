@@ -38,7 +38,7 @@ ob_start();
         
 
         <a href="<?= BASE_URL ?>?action=cadastro-filial"
-            class="btn btn-primary btn-lg rounded-6 shadow-sm px-3 d-flex align-items-center gap-2">
+             class="btn btn-primary btn-lg rounded-6 shadow-sm px-3 d-flex align-items-center gap-2">
 
                 <span class="material-symbols-outlined">
                      +
