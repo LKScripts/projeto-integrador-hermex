@@ -10,8 +10,8 @@ $tituloPagina = 'Produtos';
 
 $estilos = [
     '/assets/css/dashboard.css',
-    '/assets/css/hermex_pages.css',
-    '/assets/css/produtos.css'
+    '/assets/css/hermex_pages.css'
+    
 ];
 
 $scripts = [
@@ -204,7 +204,7 @@ ob_start();
                            class="form-control">
 
                     <button type="submit"
-                            class="btn btn-dark">
+                            class="btn-hermex-primary d-flex align-items-center gap-2 text-decoration-none">
 
                         Buscar
                     </button>
@@ -389,7 +389,7 @@ ob_start();
 
                                         <!-- EDITAR -->
                                         <a href="/?action=editar-produto&id=<?= (int)($p->id ?? 0) ?>"
-                                           class="btn btn-outline-primary btn-sm">
+                                           class="btn-hermex-primary d-flex align-items-center gap-2 text-decoration-none">
 
                                             Editar
                                         </a>
@@ -404,7 +404,8 @@ ob_start();
                                                    value="<?= (int)($p->id ?? 0) ?>">
 
                                             <button type="submit"
-                                                    class="btn btn-outline-danger btn-sm">
+                                                    class="btn-hermex-primary d-flex align-items-center gap-2 text-decoration-none"
+                                                    style="background:#dc3545;border-color:#dc3545;color:#fff;">
 
                                                 Excluir
                                             </button>
@@ -516,7 +517,8 @@ ob_start();
                             <div class="d-flex gap-2">
 
                                 <a href="/?action=editar-produto&id=<?= (int)($p->id ?? 0) ?>"
-                                   class="btn btn-outline-primary btn-sm flex-fill">
+                                   class="btn btn-sm rounded-3 text-white"
+                                    style="background:#1e293b;border:none;">
 
                                     Editar
                                 </a>
