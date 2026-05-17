@@ -24,6 +24,7 @@ use App\Controllers\FilialController;
 use App\Controllers\ProdutoController;
 use App\Controllers\RelatorioController;
 
+use App\Repositories\FilialRepository;
 use App\Repositories\ProdutoRepository;
 
 $action = $_GET['action'] ?? 'dashboard';
@@ -173,9 +174,28 @@ function excluirProduto(): void
 */
 function salvarFilial(): void
 {
-    $_SESSION['sucesso'] = 'Filial cadastrada com sucesso!';
+    try {
 
-    header('Location: /?action=filiais');
+        $repository = new FilialRepository();
+
+        $repository->salvar($_POST);
+
+        $_SESSION['sucesso'] = 'Filial cadastrada com sucesso!';
+
+        header('Location: /?action=filiais');
+
+    } catch (\InvalidArgumentException $e) {
+
+        $_SESSION['erro'] = $e->getMessage();
+
+        header('Location: /?action=cadastro-filial');
+
+    } catch (\Throwable $e) {
+
+        $_SESSION['erro'] = 'Erro ao salvar filial. Tente novamente.';
+
+        header('Location: /?action=cadastro-filial');
+    }
 
     exit;
 }

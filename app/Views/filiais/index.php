@@ -20,6 +20,14 @@ ob_start();
 
 <div class="container-fluid py-4 px-4 filial-page">
 
+    <?php if (!empty($_SESSION['sucesso'])): ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <?= htmlspecialchars($_SESSION['sucesso'], ENT_QUOTES, 'UTF-8') ?>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        <?php unset($_SESSION['sucesso']); ?>
+    <?php endif; ?>
+
     <!-- HEADER -->
     <div class="page-header">
 
